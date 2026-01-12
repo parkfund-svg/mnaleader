@@ -1,0 +1,47 @@
+# 환경 설정 파일 (민감한 정보 포함)
+config.php
+.env
+.env.local
+.env.production
+
+# 업로드 파일
+uploads/
+*.log
+logs/
+
+# IDE 설정
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 운영체제 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 임시 파일
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# 데이터베이스 백업
+*.sql.bak
+*.dump
+
+# PHP 관련
+vendor/
+composer.lock
+
+# Node 모듈 (있다면)
+node_modules/
+package-lock.json
+
+# Docker 관련 (선택사항)
+# docker-compose.override.yml
+
+# 기타
+*.cache
+.cache/

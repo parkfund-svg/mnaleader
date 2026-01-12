@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>양도기업 리스트 - (주)엠앤에이리더 M&A LEADER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="subpage.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="(주)엠앤에이리더 로고">
+                        <span>M&A LEADER</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="has-submenu">
+                        <a href="greeting.html" class="main-menu">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="greeting.html">인사말</a></li>
+                            <li><a href="business-info.html">업무내용안내</a></li>
+                            <li><a href="greeting.html#location">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="transfer-guide.html" class="main-menu">양도양수</a>
+                        <ul class="submenu">
+                            <li><a href="transfer-list.html">양도기업리스트</a></li>
+                            <li><a href="transfer-guide.html">양도양수안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="new-registration-process.html" class="main-menu">신규건설업신청</a>
+                        <ul class="submenu">
+                            <li><a href="new-registration-process.html">신규등록절차</a></li>
+                            <li><a href="new-registration-docs.html">신규건설업신청구비서류</a></li>
+                            <li><a href="new-registration-apply.html">건설업신규등록신청</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="corporation-types.html" class="main-menu">건설관련정보</a>
+                        <ul class="submenu">
+                            <li><a href="corporation-types.html">법인의 종류</a></li>
+                            <li><a href="registration-standards.html">건설업등록기준</a></li>
+                            <li><a href="deductible-association.html">공제조합</a></li>
+                            <li><a href="business-diagnosis.html">기업진단</a></li>
+                            <li><a href="#info-mng-eval">경영상태평가</a></li>
+                            <li><a href="#info-build-eval">시공능력평가</a></li>
+                            <li><a href="average-costs.html">업종별평균비율</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="business-split-merger.html" class="main-menu">분할합병및법인전환</a>
+                        <ul class="submenu">
+                            <li><a href="business-split-merger.html">기업분할/합병</a></li>
+                            <li><a href="corporation-conversion.html">법인전환</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="consulting.html">상담신청</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="subpage-header">
+        <div class="container">
+             <div class="header-box">
+                <h1>양도기업 리스트</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">홈</a>
+                    <span>›</span>
+                    <span>양도양수</span>
+                    <span>›</span>
+                    <span>양도기업 리스트</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="board-container">
+                <div class="board-search">
+                    <form id="searchForm">
+                        <select name="search_field">
+                            <option value="subject">업종</option>
+                            <option value="content">지역</option>
+                            <option value="price">양도가</option>
+                        </select>
+                        <input type="text" name="search_keyword" placeholder="검색어를 입력하세요">
+                        <button type="submit" class="btn btn-primary">검색</button>
+                    </form>
+                </div>
+
+                <table class="board-table">
+                    <thead>
+                        <tr>
+                            <th class="col-num">번호</th>
+                            <th class="col-cat">업종</th>
+                            <th class="col-title">법인명/소재지</th>
+                            <th class="col-price">양도가</th>
+                            <th class="col-date">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Sample Row 1 -->
+                        <tr>
+                            <td data-label="번호">10</td>
+                            <td data-label="업종">건축공사업</td>
+                            <td data-label="법인명/소재지" class="text-left"><a href="#">(주)가나건설 / 서울</a></td>
+                            <td data-label="양도가">8억 5천</td>
+                            <td data-label="등록일">2024-07-29</td>
+                        </tr>
+                         <!-- Sample Row 2 -->
+                        <tr>
+                            <td data-label="번호">9</td>
+                            <td data-label="업종">토목공사업</td>
+                            <td data-label="법인명/소재지" class="text-left"><a href="#">(주)다라건설 / 경기</a></td>
+                            <td data-label="양도가">10억</td>
+                            <td data-label="등록일">2024-07-28</td>
+                        </tr>
+                         <!-- Sample Row 3 -->
+                        <tr>
+                            <td data-label="번호">8</td>
+                            <td data-label="업종">실내건축공사업</td>
+                            <td data-label="법인명/소재지" class="text-left"><a href="#">(주)마바건설 / 인천</a></td>
+                            <td data-label="양도가">3억</td>
+                            <td data-label="등록일">2024-07-27</td>
+                        </tr>
+                         <!-- Sample Row 4 -->
+                        <tr>
+                           <td data-label="번호">7</td>
+                            <td data-label="업종">전기공사업</td>
+                            <td data-label="법인명/소재지" class="text-left"><a href="#">(주)사아건설 / 부산</a></td>
+                            <td data-label="양도가">5억</td>
+                            <td data-label="등록일">2024-07-26</td>
+                        </tr>
+                         <!-- Sample Row 5 -->
+                        <tr>
+                           <td data-label="번호">6</td>
+                            <td data-label="업종">정보통신공사업</td>
+                            <td data-label="법인명/소재지" class="text-left"><a href="#">(주)자차건설 / 대구</a></td>
+                            <td data-label="양도가">2억 5천</td>
+                            <td data-label="등록일">2024-07-25</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination">
+                    <a href="#" class="page-arrow first">«</a>
+                    <a href="#" class="page-arrow prev">‹</a>
+                    <a href="#" class="page-num active">1</a>
+                    <a href="#" class="page-num">2</a>
+                    <a href="#" class="page-num">3</a>
+                    <a href="#" class="page-arrow next">›</a>
+                    <a href="#" class="page-arrow last">»</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>(주)엠앤에이리더</h3>
+                    <p><strong>M&A LEADER</strong></p>
+                    <ul class="footer-details">
+                        <li>대표이사 : 김은하</li>
+                        <li>주소 : 서울시 서초구 서초중앙로 110, B1층(A190호)</li>
+                        <li>TEL : 02-588-2844</li>
+                        <li>FAX : 02-6944-8260</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>관련 사이트</h4>
+                    <ul>
+                        <li><a href="http://www.kiscon.net/" target="_blank">대한건설협회</a></li>
+                        <li><a href="http://www.keca.or.kr/" target="_blank">전문건설협회</a></li>
+                        <li><a href="https://www.ecfc.co.kr/" target="_blank">전기공사협회</a></li>
+                        <li><a href="https://www.kica.or.kr/" target="_blank">정보통신공사협회</a></li>
+                        <li><a href="http://www.icfc.or.kr/" target="_blank">소방산업공제조합</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>COPYRIGHT 2026. (주)엠앤에이리더 M&A LEADER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="topBtn" class="top-btn" title="맨 위로">
+        <span>▲</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
