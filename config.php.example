@@ -34,8 +34,8 @@ define('DB_USER', getenv('DB_USER') ?: 'root');
 define('DB_PASS', getenv('DB_PASS') ?: '');
 define('DB_CHARSET', 'utf8mb4');
 
-// 사이트 설정
-define('SITE_URL', 'http://localhost:8000');  // 실제 URL로 변경
+// 사이트 설정 (환경 변수 우선)
+define('SITE_URL', getenv('SITE_URL') ?: 'http://localhost:8000');
 define('ADMIN_URL', SITE_URL . '/admin');
 define('SITE_NAME', '(주)엠앤에이리더 M&A LEADER');
 

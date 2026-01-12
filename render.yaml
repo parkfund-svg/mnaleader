@@ -1,0 +1,30 @@
+services:
+  # 웹 서비스
+  - type: web
+    name: mnaleader-web
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASS
+        sync: false
+      - key: SITE_URL
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true
+
+  # MySQL 데이터베이스
+  - type: pspg
+    name: mnaleader-db
+    plan: free
+    databaseName: mnaleader
+    databaseUser: mnaleader
+    # PostgreSQL을 사용하는 경우 (Render 기본)
+    # MySQL이 필요한 경우 외부 MySQL 서비스 사용 필요

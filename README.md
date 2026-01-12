@@ -138,11 +138,24 @@ docker compose logs -f
 
 ## 🌐 웹 배포
 
-GitHub에 업로드한 후 웹에서 확인하는 방법은 [DEPLOYMENT.md](DEPLOYMENT.md)를 참조하세요.
+### 🚀 GitHub 자동 배포 (추천)
 
-**빠른 배포 추천:**
-- 무료: [InfinityFree](https://infinityfree.net) - 가장 간단
-- 클라우드: [Railway](https://railway.app) - GitHub 연동
+GitHub에 푸시하면 자동으로 배포됩니다!
+
+**빠른 시작**: [QUICK_DEPLOY.md](QUICK_DEPLOY.md) 참조
+
+**지원 플랫폼:**
+- **[Railway](https://railway.app)** ⭐ 추천 - GitHub 연동, MySQL 지원, 무료 크레딧
+  - 자세한 가이드: [RAILWAY_DEPLOY.md](RAILWAY_DEPLOY.md)
+- **[Render](https://render.com)** - GitHub 연동, 무료 티어
+  - 자세한 가이드: [RENDER_DEPLOY.md](RENDER_DEPLOY.md)
+
+### 📤 수동 배포
+
+FTP를 통한 수동 배포 방법은 [DEPLOYMENT.md](DEPLOYMENT.md)를 참조하세요.
+
+**기타 옵션:**
+- 무료: [InfinityFree](https://infinityfree.net) - FTP 업로드
 - 한국: [Cafe24](https://www.cafe24.com) - 한국어 지원
 
 ## 📞 문의
