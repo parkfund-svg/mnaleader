@@ -16,9 +16,20 @@ git push origin main
 
 1. **Railway 접속**: https://railway.app
 2. **GitHub로 로그인**
-3. **"New Project"** 클릭
-4. **"Deploy from GitHub repo"** 선택
-5. **저장소 선택** (엠앤에이리더 프로젝트)
+
+3. **⚠️ 저장소가 안 보이면 (중요!)**:
+   - GitHub → Settings → Applications → Authorized OAuth Apps → Railway
+   - "Configure" 클릭
+   - "Repository access"에서 `parkfund-svg/mnaleader` 저장소 선택 또는 "All repositories" 선택
+   - 저장 후 Railway로 돌아가서 새로고침
+
+4. **"New Project"** 클릭
+5. **"Deploy from GitHub repo"** 선택
+6. **저장소 선택** (`parkfund-svg/mnaleader` 또는 `mnaleader`)
+   
+   **또는 직접 URL 입력**:
+   - 저장소가 안 보이면 "Import from GitHub" 옆의 "Or paste a repository URL" 클릭
+   - `https://github.com/parkfund-svg/mnaleader` 입력
 
 ### 3단계: MySQL 데이터베이스 추가
 
