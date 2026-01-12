@@ -1,6 +1,78 @@
-# Railway 저장소가 안 보일 때 해결 방법
+# Railway 저장소 문제 해결 가이드
 
-## 문제: GitHub 로그인 후 저장소가 안 보임
+## 문제 1: GitHub 로그인 후 저장소가 안 보임
+
+## 문제 2: 저장소는 보이지만 "제한된 접근" (Limited Access) 메시지 ⚠️
+
+**증상**: `mnaleader-web` 저장소가 보이지만 "Limited access" 또는 "Restricted access" 메시지가 표시됨
+
+**원인**: Railway GitHub App이 저장소에 대한 충분한 권한이 없음
+
+### 해결 방법 1: GitHub App 권한 확인 및 승인 (가장 중요!)
+
+1. **GitHub 저장소 페이지로 이동**
+   - https://github.com/parkfund-svg/mnaleader 접속
+
+2. **Settings → Integrations → Applications**
+   - 저장소 페이지에서 **Settings** 클릭
+   - 왼쪽 메뉴에서 **Integrations** → **Applications** 클릭
+
+3. **Railway 앱 찾기 및 승인**
+   - "Installed GitHub Apps" 섹션에서 "Railway" 찾기
+   - Railway 앱 클릭
+   - **"Configure"** 또는 **"Grant access"** 버튼 클릭
+   - 저장소 접근 권한 승인
+
+### 해결 방법 2: Organization 권한 확인 (Organization인 경우)
+
+1. **Organization Settings**
+   - https://github.com/organizations/parkfund-svg/settings/applications 접속
+   - 또는 GitHub → `parkfund-svg` Organization → **Settings** → **Applications**
+
+2. **Installed GitHub Apps 확인**
+   - "Installed GitHub Apps" 탭 클릭
+   - "Railway" 앱 찾기
+
+3. **권한 설정**
+   - Railway 앱 클릭
+   - "Configure" 클릭
+   - **"Repository access"** 섹션 확인
+   - `parkfund-svg/mnaleader` 저장소 선택 또는 "All repositories" 선택
+   - **"Permissions & events"** 섹션에서:
+     - ✅ Repository permissions: **Read and write**
+     - ✅ Contents: **Read and write**
+     - ✅ Metadata: **Read-only** (자동)
+   - "Save" 클릭
+
+### 해결 방법 3: Railway에서 저장소 재연결
+
+1. **Railway에서 저장소 제거 후 재연결**
+   - Railway 대시보드에서 해당 저장소 제거 (있는 경우)
+   - "New Project" → "Deploy from GitHub repo"
+   - 저장소 선택 시 **권한 승인 확인**
+
+2. **또는 저장소 URL 직접 입력**
+   - Railway → "New Project"
+   - "Deploy from GitHub repo" 선택
+   - "Or paste a repository URL" 클릭
+   - `https://github.com/parkfund-svg/mnaleader` 입력
+   - 권한 승인 프롬프트가 나타나면 승인
+
+### 해결 방법 4: GitHub Personal Access Token 사용 (임시 해결책)
+
+만약 위 방법이 모두 안 되면:
+
+1. **Personal Access Token 생성**
+   - GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
+   - "Generate new token (classic)" 클릭
+   - 권한 선택: `repo` (전체 권한)
+   - 토큰 생성 및 복사
+
+2. **Railway에서 직접 배포**
+   - Railway CLI 사용하거나
+   - Git으로 직접 배포
+
+## 문제 1: GitHub 로그인 후 저장소가 안 보임
 
 ### 해결 방법 1: GitHub 권한 확인 및 재설정 (가장 중요!)
 
