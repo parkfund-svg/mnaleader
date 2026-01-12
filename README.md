@@ -136,6 +136,15 @@ docker compose logs -f
 
 이 프로젝트는 사유 소프트웨어입니다.
 
+## 🌐 웹 배포
+
+GitHub에 업로드한 후 웹에서 확인하는 방법은 [DEPLOYMENT.md](DEPLOYMENT.md)를 참조하세요.
+
+**빠른 배포 추천:**
+- 무료: [InfinityFree](https://infinityfree.net) - 가장 간단
+- 클라우드: [Railway](https://railway.app) - GitHub 연동
+- 한국: [Cafe24](https://www.cafe24.com) - 한국어 지원
+
 ## 📞 문의
 
 - 회사: (주)엠앤에이리더 M&A LEADER
