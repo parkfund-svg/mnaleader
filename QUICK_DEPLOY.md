@@ -10,7 +10,15 @@
 
 ---
 
-## 추천: Render (무료 웹 서비스 제공) ⭐
+## 🏆 완전 무료 추천: InfinityFree (PHP + MySQL 모두 무료) ⭐⭐⭐
+
+**가장 쉬운 방법**: InfinityFree는 웹 서비스와 MySQL 데이터베이스를 모두 무료로 제공합니다!
+
+**빠른 시작**: `DEPLOYMENT.md`의 "InfinityFree" 섹션 참조
+
+---
+
+## 옵션 2: Render (웹 서비스 무료) + Railway DB (데이터베이스만 무료) ⭐⭐
 
 ### 1단계: GitHub에 푸시
 
